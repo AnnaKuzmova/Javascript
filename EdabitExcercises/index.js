@@ -86,3 +86,28 @@ console.log(prices({"Bike1" : 510, "Bike2" : 401, "Bike3" : 501}));
 Create a function that takes an array of numbers and return "Boom!" if the number 7 appears in the array. 
 Otherwise, return "there is no 7 in the array".
 */
+
+let isSeven = (arr) => {
+   let found = arr.find(item => item.toString().includes('7'));
+   return found !== undefined?'boom!':'there is no seven in array';
+}
+
+console.log(isSeven([1, 2, 3, 4, 5, 6, 7]));
+console.log(isSeven([8, 6, 33, 100]));
+console.log(isSeven([2, 55, 60, 97, 86]));
+
+// Write a function that takes an integer minutes and converts it to seconds.
+
+let convert = (num) => num * 60 ;
+
+console.log(convert(5));
+console.log(convert(3));
+console.log(convert(2));
+
+// Write a function that returns the string "something" joined with a space " " and the given argument a.
+
+let returnSomething = (a) => 'something' + ' ' + a ;
+
+console.log(returnSomething("is better than nothing"));
+console.log(returnSomething("Bob Jane"));
+console.log(returnSomething("something"));  
