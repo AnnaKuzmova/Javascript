@@ -111,3 +111,25 @@ let returnSomething = (a) => 'something' + ' ' + a ;
 console.log(returnSomething("is better than nothing"));
 console.log(returnSomething("Bob Jane"));
 console.log(returnSomething("something"));  
+
+// Create a function that takes an object and returns the keys and values as separate arrays.
+
+let toArray = (obj) => {
+    let array = new Array(2);
+    array[0] = Object.keys(obj);
+    array[1] = Object.values(obj);
+    return array;
+}
+
+console.log(toArray({ a: "Apple", b: "Microsoft", c: "Google" }));
+console.log(toArray({ a: 1, b: 2, c: 3 }));
+
+// Write a function that converts an object into an array of keys and values.
+
+let objectToArray = (obj) => Object.entries(obj);
+
+console.log(objectToArray({
+    D: 1,
+    B: 2,
+    C: 3
+  }));
