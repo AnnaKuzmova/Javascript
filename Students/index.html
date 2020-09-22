@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <section class="main-part">
+            <h1>Students task</h1>
+            <button id="add-button">add Student</button> 
+            <button id="filter-button">filter students</button>
+        </section>   
+        <section id="modal">
+           <img src="images/avatar.svg" alt="avatar"> 
+           <form>
+               <input type="text" id="name" placeholder="Student's Name" required>
+               <input type="text" id="faculty-number" placeholder="Faculty Number" required>
+               <input type="text" id="year" placeholder="Start Year" required>
+               <input type="text" id="average-score" placeholder="Average Score" required>
+           </form>
+           <button id="add-student">add</button>
+           <button id="close-student">close</button>
+        </section>  
+        <main class="filtered-data">
+            <section>
+                <h2>
+                    All students
+                </h2>
+                <ul id="all-students">
+               
+                </ul>
+            </section>
+            <section>
+                <h2>
+                    Students with average score more than 4.50
+                </h2>
+                <ul id="students-score">
+                  
+                </ul>
+            </section>
+            <section>
+                <h2>
+                    Students with min and max average score with start year at 2018
+                </h2>
+                <ul>
+
+                </ul>
+            </section>
+            <section>
+                <h2>
+                    Average score for students with average score more than 5
+                </h2>
+                <ul id="filtered-score">
+
+                </ul>
+            </section>
+        </main>
+
+        <script src="index.js"></script>
+    </body>
+</html>

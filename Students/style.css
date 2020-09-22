@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.main-part {
+    padding: 30px 20px;
+    margin-bottom: 5%;
+}
+
+.main-part h1 {
+    margin-bottom: 1%;
+    font-size: 2.500em;
+    color: #853E34;
+}
+
+button {
+    display: block;
+    float: left;
+    margin-right: 2%;
+    padding: 8px 0;
+    width: 9%;
+    font-weight: bold;
+   background: #D9BAA4;
+   color: #853E34;
+   border: none;
+   border-radius: 6px;
+   text-transform: uppercase;
+   cursor: pointer;
+   
+}
+
+button:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#modal {
+    position: absolute;
+    top: 0;
+    right: -95%;
+    width: 40%;
+    height: 100vh;
+    background: #EDDFCD;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: ease-in-out .5s;
+}
+
+#modal img {
+    display: block;
+    width: 30%;
+    margin: 6% auto;
+    background: #E96925;
+    border-radius: 50%;
+}
+
+#modal form {
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
+    width: 75%;
+    margin: 2% auto;
+}
+
+#modal form input {
+    display: block;
+    margin: 3% 0;
+    padding: 10px 3px;
+    width: 45%;
+    font-weight: bold;
+    border: #853E34 1px solid;
+    border-radius: 12px;
+    color: #E96925;
+}
+
+#modal form input:focus {
+    border: #E96925 1px solid;
+    color: #853E34;
+    box-shadow: 0px 0px 5px 0px rgba(233,105,37,1);
+}
+
+#add-student, #close-student {
+    float: none;
+    display: block;
+    margin: 2% auto;
+    width: 25%;
+    background: #853E34;
+    color: #EDDFCD;
+}
+
+.filtered-data {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.filtered-data section {
+    width: 24%;
+    height: max-content;
+    background: #853E34;
+    color: #D9BAA4;
+   border-radius: 5px;
+}
+
+.filtered-data section h2 {
+    padding: 3px 5px;
+    font-size: 1.200em;
+}
+
+.filtered-data section ul {
+    background: #d9baa4;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.filtered-data section ul li {
+    padding: 10px 0;
+    list-style: none;
+    color: #E96925;
+    text-align: center;
+    border-bottom: #853E34 1px solid;
+}
+
+.filtered-data section ul li:last-child {
+    border-bottom: none;
+}
