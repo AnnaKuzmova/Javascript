@@ -54,6 +54,18 @@ filterButton.addEventListener('click', function(){
         studentsFilteredScore.appendChild(li);
     });
 
+//Display students who started in 2018 
+    let filteredYearList = document.querySelector('#filtered-year');
+    let filteredYearStudents = arrayStudents.filter(student => {
+        return parseInt(student.startYear) === 2018 ;
+    }).forEach(student => {
+        let li = document.createElement('li');
+        let text = document.createTextNode(student.name + " " + student.facultyNumber + " " + student.startYear);
+        li.appendChild(text);
+        filteredYearList.appendChild(li);
+    });
+
+
     //Display average score for students with av-score more than 5
     let filteredAverage = document.querySelector('#filtered-score');
     let score = 0;
@@ -63,6 +75,7 @@ filterButton.addEventListener('click', function(){
             return item;
         }
     }).reduce((a,b) => parseFloat(a.averageScore) + parseFloat(b.averageScore));
+    
     let li = document.createElement('li');
     let text = document.createTextNode(parseFloat(avScore/score));
     li.appendChild(text);
