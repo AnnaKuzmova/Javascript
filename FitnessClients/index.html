@@ -9,14 +9,48 @@
     <body>
         
         <section id="controls">
-            <h3>
-                FitnessClients
-            </h3>
-            <ul>
-                <li>Add</li>
-                <li>Filter</li>
-            </ul>
+            <h1>
+                Fitness Clients
+            </h1>
+           <img src="images/avatar.png.png" alt="client_logo">
+           <button id="open-modal-button" class="button">
+               Add
+            </button>
+           <button id="filter-clients-button" class="button">
+               Filter
+            </button>
+        </section>
+        <section id="modal-addClient">
+            <div class="modal-data">
+            <h2>Client information:</h2>
+            <input type="text" id="name" name="clientName" placeholder="Clinet's Name" required>
+            <input type="text" id="weight" name="clientWeight" placeholder="Clinet's Weight" required>
+            <input type="text" id="payment" name="clientPayment" placeholder="Paid Tax" required>
+            <input type="text" id="visits" name="clientVisit" placeholder="Clients's all Visits" required>
+            <button id="modal-add-button">Add</button>
+        </div>
+        </section>
+        <section id="filtered-data-holder">
+            <div>
+                <h3>All clients</h3>
+                <ul class="all-clients">
+
+                </ul>
+            </div>
+            <div>
+                <h3>Clients with payment more than 35.50 and visits more than 10</h3>
+                <ul class="visits-payment-filter">
+
+                </ul>
+            </div>
+            <div>
+                <h3>Clients with weight between 60kg and 90kg</h3>
+                <ul class="weight-filter">
+
+                </ul>
+            </div>
         </section>
 
+        <script src="index.js"></script>
     </body>
 </html>
